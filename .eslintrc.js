@@ -3,7 +3,12 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/essential', 'eslint:recommended', 'plugin:prettier/recommended', '@vue/prettier'],
+  extends: [
+    'plugin:vue/essential',
+    'plugin:prettier/recommended',
+    '@vue/prettier',
+    'eslint:recommended'
+  ],
   parserOptions: {
     parser: 'babel-eslint'
   },
@@ -14,7 +19,10 @@ module.exports = {
   settings: { 'import/resolver': { node: { paths: ['src'] } } },
   overrides: [
     {
-      files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)'
+      ],
       env: {
         jest: true
       }
