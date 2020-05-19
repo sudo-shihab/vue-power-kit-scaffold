@@ -6,12 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint",
-    "husky": {
-      "hooks": {
-        "pre-commit": "pretty-quick --staged"
-      }
-    }
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.4",
@@ -41,5 +36,10 @@
     "pretty-quick": "2.0.1",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
