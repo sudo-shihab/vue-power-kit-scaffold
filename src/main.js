@@ -15,6 +15,8 @@ import store from './store';
 Vue.config.productionTip = false;
 console.log('test');
 console.log('test 3');
+console.log('test');
+console.log('test 3');
 
 new Vue({
   router,
