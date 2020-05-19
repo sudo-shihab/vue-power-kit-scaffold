@@ -3,7 +3,7 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/essential', 'airbnb-base', 'plugin:prettier/recommended', '@vue/prettier'],
+  extends: ['plugin:vue/essential', 'eslint:recommended', 'plugin:prettier/recommended', '@vue/prettier'],
   parserOptions: {
     parser: 'babel-eslint'
   },
@@ -11,6 +11,7 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
   },
+  settings: { 'import/resolver': { node: { paths: ['src'] } } },
   overrides: [
     {
       files: ['**/__tests__/*.{j,t}s?(x)', '**/tests/unit/**/*.spec.{j,t}s?(x)'],
