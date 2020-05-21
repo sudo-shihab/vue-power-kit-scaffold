@@ -30,7 +30,6 @@
 //
 // ─── IMPORTS ────────────────────────────────────────────────────────────────────
 //
-
 // npm packages
 import Vue from 'vue';
 
@@ -42,21 +41,13 @@ import store from './store';
 // ────────────────────────────────────────────────────────────── IMPORT ENDS ─────
 //
 
-//
-// ─── SCRIPT LOGIC ───────────────────────────────────────────────────────────────
-//
-
 // config for prod wrt to vue cli
 Vue.config.productionTip = false;
 
-// intialize vue instance
+// vue instance intialization
 new Vue({
   router,
   store,
   render: (h) => h(App)
 }).$mount('#app');
-//
-// ──────────────────────────────────────────────────────── SCRIPT LOGIC ENDS ─────
-//
-
 // ────────────────────────────────────────────────────────────────────────────────
