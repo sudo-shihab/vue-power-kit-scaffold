@@ -1,6 +1,29 @@
+/**
+ * @license
+ * Copyright NAME. All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file in the root directory of this source tree.
+ */
+
+//
+// ────────────────────────────────────────────────────────────────── I ──────────
+//   :::::: R O U T E R   M O D U L E : :  :   :    :     :        :          :
+// ────────────────────────────────────────────────────────────────────────────
+//
+
+//
+// ─── IMPORTS ────────────────────────────────────────────────────────────────────
+//
+
+// npm packages
 import Vue from 'vue';
+// app imports
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+//
+// ────────────────────────────────────────────────────────────── IMPORT ENDS ─────
+//
 
 Vue.use(VueRouter);
 
@@ -30,3 +53,5 @@ const router = new VueRouter({
 });
 
 export default router;
+
+// ────────────────────────────────────────────────────────────────────────────────
