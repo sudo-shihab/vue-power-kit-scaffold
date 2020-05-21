@@ -21,6 +21,10 @@ const routes = [
   }
 ];
 
+/**
+ * @description - A first class function to encapsulate routes config
+ * @param  {Array} {routes}
+ */
 const router = new VueRouter({
   routes
 });
