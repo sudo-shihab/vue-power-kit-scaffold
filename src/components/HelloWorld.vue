@@ -107,14 +107,23 @@
         >
       </li>
     </ul>
+    <AppLayout>HELLO BTN</AppLayout>
   </div>
 </template>
 
 <script>
+import AppLayout from '@/components/AppButton.vue';
 export default {
   name: 'HelloWorld',
   props: {
-    msg: String
+    msg: {
+      type: String,
+      required: true,
+      default: 'test msg'
+    }
+  },
+  components: {
+    AppLayout
   }
 };
 </script>
